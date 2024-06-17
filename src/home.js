@@ -9,8 +9,8 @@ import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { Paper, CardActionArea, CardMedia, Grid, TableContainer, Table, TableBody, TableHead, TableRow, TableCell, Button, CircularProgress } from "@material-ui/core";
-import pplogo from "./pplogo.png";
-import image from "./bg.png";
+import pplogo from "./AgroVI.jpg";
+import image from "./bgpic.jpg";
 import { DropzoneArea } from 'material-ui-dropzone';
 import { common } from '@material-ui/core/colors';
 import Clear from '@material-ui/icons/Clear';
@@ -210,7 +210,7 @@ export const ImageUpload = () => {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            Potato Plus: Potato Disease Classification
+           AgroVI: sending success...
           </Typography>
           <div className={classes.grow} />
           <Avatar src={pplogo}></Avatar>
@@ -239,7 +239,7 @@ export const ImageUpload = () => {
               {!image && <CardContent className={classes.content}>
                 <DropzoneArea
                   acceptedFiles={['image/*']}
-                  dropzoneText={"Drag and drop an image of a potato plant leaf to process"}
+                  dropzoneText={"Drag and drop an image of a plant leaf to process"}
                   onChange={onSelectFile}
                 />
               </CardContent>}
